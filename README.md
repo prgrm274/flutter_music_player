@@ -4,13 +4,10 @@ A new Flutter project by me
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### 1. Ketik nama penyanyi atau grup band di kolom search (atas)
 
-A few resources to get you started if this is your first Flutter project:
+### 2. Tekan icon search di sebelah kanan kolom untuk konfirmasi pencarian (OK)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### 3. Tunggu sejenak, pencarian anda akan ditampilkan pada daftar di bawah
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 4. Tekan icon play pada tiap lagu untuk memutar lagu
