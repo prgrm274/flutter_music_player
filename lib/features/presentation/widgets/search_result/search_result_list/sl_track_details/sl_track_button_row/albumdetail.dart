@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_music_player/features/presentation/redux/actions.dart';
 import 'package:flutter_music_player/features/presentation/redux/appstate.dart';
-import 'package:flutter_music_player/features/presentation/widgets/audioplayerwrapper.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_result/search_result_list/sl_track_details/sl_track_button_row/audioplayerwrapper.dart';
 import 'package:flutter_music_player/core/helper/helper.dart';
 import 'package:flutter_music_player/features/presentation/views/main.dart';
 import 'package:flutter_music_player/features/data/datasources/rest.dart';

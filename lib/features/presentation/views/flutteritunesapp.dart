@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_music_player/features/presentation/redux/appstate.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_result/searchresultlist.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_result/search_result_list.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 
