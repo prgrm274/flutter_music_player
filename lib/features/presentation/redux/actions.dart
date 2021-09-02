@@ -1,5 +1,5 @@
 
-import 'package:flutter_music_player/features/data/models/trackitem.dart';
+import 'package:flutter_music_player/features/data/models/track_item.dart';
 
 class ChangeSearchTextAction {
   final String searchText;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_music_player/features/data/models/trackitem.dart';
+import 'package:flutter_music_player/features/data/models/track_item.dart';
 import 'package:flutter_music_player/features/presentation/redux/appstate.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_result/search_result_list/sl_track_details/sl_track_button_row/audioplayerwrapper.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_result_list/sl_track_details/sl_track_button_row/audio_player_wrapper.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 
 class SlTrackButtonPlayPause extends StatelessWidget {

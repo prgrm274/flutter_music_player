@@ -11,7 +11,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 
 typedef OnSearchCallback = Function(String searchText);
 
-class SearchDialog extends StatelessWidget {
+class SlSearchDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new StoreConnector<AppState, OnSearchCallback>(
@@ -22,24 +22,24 @@ class SearchDialog extends StatelessWidget {
         };
       },
       builder: (_, searchCallback) {
-        return _SearchDialogWidget(searchCallback);
+        return _SfulSearchDialog(searchCallback);
       }
     );
   }
 }
 
-class _SearchDialogWidget extends StatefulWidget {
+class _SfulSearchDialog extends StatefulWidget {
   final OnSearchCallback _callback;
-  _SearchDialogWidget(this._callback);
+  _SfulSearchDialog(this._callback);
 
   @override
-  State<StatefulWidget> createState() => _SearchDialogWidgetState(_callback);
+  State<StatefulWidget> createState() => _SfulSearchDialogState(_callback);
 }
 
-class _SearchDialogWidgetState extends State<_SearchDialogWidget> {
+class _SfulSearchDialogState extends State<_SfulSearchDialog> {
   String _searchText;
   final OnSearchCallback _callback;
-  _SearchDialogWidgetState(this._callback);
+  _SfulSearchDialogState(this._callback);
 
   @override
   Widget build(BuildContext context) {

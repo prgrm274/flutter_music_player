@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_music_player/features/data/models/trackitem.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_result/search_result_list/sl_track_details/sl_track_button_row/albumdetail.dart';
+import 'package:flutter_music_player/features/data/models/track_item.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_result_list/sl_track_details/sl_track_button_row/albumdetail.dart';
 
 class SlTrackButtonShowAlbumDetails extends StatelessWidget {
   final TrackItem _trackItem;

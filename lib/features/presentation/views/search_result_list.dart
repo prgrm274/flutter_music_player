@@ -2,19 +2,18 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_music_player/features/data/datasources/rest.dart';
 import 'package:flutter_music_player/features/presentation/redux/actions.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_result/search_result_list/sl_track_details/sl_track_button_row/albumdetail.dart';
 import 'package:flutter_music_player/features/presentation/redux/appstate.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_result/apptectsbutton.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_result/search_result_list/sl_track_details/sl_track_button_row/audioplayerwrapper.dart';
+import 'package:flutter_music_player/features/presentation/widgets/not_list/sl_scaffold_leading.dart';
+import 'package:flutter_music_player/features/presentation/widgets/not_list/sl_search_button.dart';
 import 'package:flutter_music_player/core/helper/helper.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_dialog/searchdialog.dart';
-import 'package:flutter_music_player/features/data/models/trackitem.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_result/search_result_list/sl_track_artwork.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_result/search_result_list/sl_track_details.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_dialog/sl_search_dialog.dart';
+import 'package:flutter_music_player/features/data/models/track_item.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_result_list/sl_track_artwork.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_result_list/sl_track_details.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_result_list/sl_track_details/sl_track_button_row/albumdetail.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 
-import 'sl_search_button.dart';
 
 /*
 Using:
@@ -33,7 +32,6 @@ _TrackPrice
 
 typedef OnSearchCallback = Function(String searchText);
 
-
 class SearchResultList extends StatefulWidget {
   final String title;
 
@@ -45,7 +43,6 @@ class SearchResultList extends StatefulWidget {
   State<StatefulWidget> createState() => _SearchResultListState(callback);
 // _SearchResultListState createState() => _SearchResultListState();
 }
-
 
 class _SearchResultListState extends State<SearchResultList> {
   /// Search
@@ -67,8 +64,9 @@ class _SearchResultListState extends State<SearchResultList> {
         builder: (_, trackItems) {
           return Scaffold(
               resizeToAvoidBottomInset: false,
-              appBar:
-                  AppBar(title: Text(widget.title), leading: SlScaffoldLeading()),
+              appBar: AppBar(
+                  title: Text(widget.title),
+                  leading: SlScaffoldLeading()),
               body: Stack(
                 children: [
                   Column(
@@ -122,14 +120,16 @@ class _SearchResultListState extends State<SearchResultList> {
               ),
               // body: _SearchResultList(trackItems),
               floatingActionButton: SlSearchButton());
-              // floatingActionButton: _SearchButton());
+          // floatingActionButton: _SearchButton());
         });
   }
 }
 
-
 class _SearchResultList extends StatelessWidget {
   final List<TrackItem> _trackItems;
+
+  TrackItem trackItem;
+  int posisi;
 
   _SearchResultList(this._trackItems);
 
@@ -169,20 +169,12 @@ class _SearchResultList extends StatelessWidget {
       ],
     );
   }
-
-  TrackItem trackItem;
-  int posisi;
 }
-
 
 // class _SearchButton extends StatelessWidget {}
 
-
-
 ///
 ///
-
-
 
 // class _TrackButtonRow extends StatelessWidget {}
 

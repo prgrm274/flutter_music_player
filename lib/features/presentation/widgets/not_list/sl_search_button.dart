@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_music_player/features/presentation/widgets/search_dialog/searchdialog.dart';
+import 'package:flutter_music_player/features/presentation/widgets/search_dialog/sl_search_dialog.dart';
 
 class SlSearchButton extends StatelessWidget {
   @override
@@ -13,6 +13,6 @@ class SlSearchButton extends StatelessWidget {
   }
 
   _searchPressed(BuildContext context) {
-    showDialog(context: context, builder: (context) => SearchDialog());
+    showDialog(context: context, builder: (context) => SlSearchDialog());
   }
 }

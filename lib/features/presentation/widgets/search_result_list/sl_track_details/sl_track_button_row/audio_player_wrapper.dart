@@ -1,6 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_music_player/features/presentation/redux/actions.dart';
-import 'package:flutter_music_player/features/data/repositories_as_data_layer/audiodownloader.dart';
+import 'package:flutter_music_player/features/data/repositories_as_data_layer/audio_downloader.dart';
 import 'package:flutter_music_player/features/presentation/views/main.dart';
 
 class AudioPlayerWrapper {
